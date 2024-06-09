@@ -20,7 +20,7 @@ public class ConverterController {
      @Autowired
     private CsvToExcelService csvToExcelService;
 
-    @PostMapping("/convert")
+    @PostMapping("/convert/xls")
     public ResponseEntity<InputStreamResource> convertCsvToExcel(@RequestBody String csvData) throws IOException {
         ByteArrayInputStream in = csvToExcelService.convertCsvToExcel(csvData);
         HttpHeaders headers = new HttpHeaders();
