@@ -7,7 +7,7 @@ const App = () => {
   return (
     <Provider store={store}>
     <div>
-      <h1>Excel Converter App</h1>
+      <h1>Excel Converter</h1>
       <ConvertToExcel />
     </div>
     </Provider>

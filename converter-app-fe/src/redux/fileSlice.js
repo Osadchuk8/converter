@@ -11,6 +11,7 @@ export const api = createApi({
       query: (file) => ({
         url: '/convert/xls',
         method: 'POST',
+        responseHandler: '(response) => response.blob()',
         body: file,
         headers: {
           'Content-Type': 'text/plain',
